@@ -68,7 +68,7 @@ std::vector<pointVertex> generatePoints() {
 					y > 20 && y < 30 &&
 					z > 10 && z < 50)
 				{
-					p.intensity = 1.0f; //strong return
+					p.intensity = 1.0f - getRandomFloat(0,.5); //strong return
 				}
 				else {
 					p.intensity = base; //weak return
