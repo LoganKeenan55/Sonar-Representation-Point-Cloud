@@ -1,6 +1,6 @@
 # Point Cloud representation of Volumetric Sensor Data
 
-This project is a real-time OpenGL viewer for volumetric point cloud data. It loads structured (x, y, z, intensity) data and renders it as a 3D point cloud, with support for depth-based filtering (gating) to isolate layers within the volume.
+This project is a real-time OpenGL renderer for volumetric point cloud data. It loads structured (x, y, z, intensity) data and renders it as a 3D point cloud, with support for depth-based filtering (gating) to isolate layers within the volume.
 
 The goal of this project is to explore how spatial data can be visualized and interacted with, particularly in workflows where data represents internal structure rather than just surface geometry.
 
