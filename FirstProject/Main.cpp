@@ -1,5 +1,8 @@
 #include"model.h"
 
+//eBOSS
+
+
 #include<fstream>
 #include<sstream>
 #include <cstdlib>
@@ -155,19 +158,20 @@ int main() {
 		camera.updateMatrix(60.0f, 0.1f, 1000.0f);
 
 		if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS) {
-			gateBottem -= gateMoveSpeed * deltaTime;
+			gateTop += gateMoveSpeed * deltaTime;
 		}
 		if (glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS) {
-			gateBottem += gateMoveSpeed * deltaTime;
-		}
-		if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS) {
 			gateTop -= gateMoveSpeed * deltaTime;
 		}
+		if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS) {
+			gateBottem += gateMoveSpeed * deltaTime;
+		}
 		if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS) {
-			gateTop += gateMoveSpeed * deltaTime;
+			gateBottem -= gateMoveSpeed * deltaTime;
 		}
 		if(gateBottem < 0.0f) gateBottem = 0.0f;
 		if(gateTop > 50.0f) gateTop = 50.0f;
+		if(gateTop < 4.0f) gateTop = 4.0f;
 		if (gateBottem >= gateTop-4.0f) gateBottem -= .5f;
 
 
