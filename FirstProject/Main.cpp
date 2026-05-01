@@ -166,7 +166,9 @@ int main() {
 		if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS) {
 			gateTop += gateMoveSpeed * deltaTime;
 		}
-
+		if(gateBottem < 0.0f) gateBottem = 0.0f;
+		if(gateTop > 50.0f) gateTop = 50.0f;
+		if (gateBottem >= gateTop-4.0f) gateBottem -= .5f;
 
 
 		pointShader.Activate();
