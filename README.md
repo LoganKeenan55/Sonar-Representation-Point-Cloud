@@ -1,10 +1,11 @@
 # Point Cloud representation of Volumetric Sensor Data
 
-This project is a real-time OpenGL renderer for volumetric point cloud data. It loads structured (x, y, z, intensity) data and renders it as a 3D point cloud, with support for depth-based filtering (gating) to isolate layers within the volume.
+Volumetric point cloud data representation created with my OpenGL renderer. It loads structured (x, y, z, intensity) data and renders it as a 3D point cloud, with support for depth based filtering (gating) to isolate layers within the volume.
 
-The goal of this project is to explore how spatial data can be visualized and interacted with, particularly in workflows where data represents internal structure rather than just surface geometry.
+The red region within the point cloud represents a simulated sunken object (like a pirate ship) buried beneath sediment, where higher intensity values are a deeper red.
 
-The red region within the point cloud represents a simulated sunken object (e.g., a ship) buried beneath sediment, where higher intensity values indicate stronger signal returns.
+Use (E/Q) and (left arrow / right) arrow to change size of current gate.
+
 
 <img width="1888" height="1064" alt="image" src="https://github.com/user-attachments/assets/ad57e978-b722-4311-9abd-b1c4f9438202" />
 
